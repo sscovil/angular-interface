@@ -1,7 +1,7 @@
 # AngularJS Interface
 ### A simple service to ensure that an object has the right methods
 
-"Program to an 'interface', not an 'implementation'." -Gang of Four
+> "Program to an interface, not an implementation." _-Gang of Four_
 
 This module enables you to define interfaces within your application and enforce them on a given object.
 
