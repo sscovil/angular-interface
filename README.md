@@ -3,14 +3,14 @@
 
 > "Program to an interface, not an implementation." _-Gang of Four_
 
-This module enables you to define interfaces within your application and enforce them on a given object.
-
 ## Getting Started
+
+This module enables you to define interfaces within your application and ensure they are implemented.
 
 - Install with Bower: `$ bower install angular-interface`
 - Add script tag: `<script src="/bower_components/angular-interface/release/angular-interface.js"></script>`
-- Add dependency: `angular.module('myApp', ['angular-interface']);`
-- Inject service: `angular.module('myApp').controller('myController', function($scope, Interface) { ... });`
+- Add dependency: `var app = angular.module('myApp', ['angular-interface']);`
+- Inject service: `app.controller('myController', function($scope, Interface) { ... });`
 
 ## Usage
 
@@ -42,11 +42,10 @@ The following code illustrates how you might use this service:
         var image = new Image();
 
         Interface.ensure(video).implements('Playable'); // Does not throw an error
-
         Interface.ensure(image).implements('Viewable'); // Does not throw an error
 
         try {
-            Interface.ensure(image).implements('Playable'); // Throws an error
+            Interface.ensure(image).implements(['Viewable', 'Playable']); // Throws an error
         }
         catch(Error) {
             $scope.error('image does not implement Playable interface');
