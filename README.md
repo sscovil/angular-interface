@@ -3,9 +3,12 @@
 
 > "Program to an interface, not an implementation." _-Gang of Four_
 
-## Getting Started
+## Overview
 
-This module enables you to define interfaces within your application and ensure they are implemented.
+This module enables you to define interfaces within your application and ensure that an object implements the methods
+of an interface using expressive syntax: `Interface.ensure(myObject).implements('MyInterface');`
+
+## Getting Started
 
 - Install with Bower: `$ bower install angular-interface`
 - Add script tag: `<script src="/bower_components/angular-interface/release/angular-interface.js"></script>`
