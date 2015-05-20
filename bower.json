@@ -1,0 +1,17 @@
+{
+  "name": "angular-interface",
+  "version": "0.1.0",
+  "main": "./release/angular-interface.js",
+  "dependencies": {
+    "angular": ">= 1.1.1"
+  },
+  "ignore": [
+    "**/.*",
+    "**/*.log",
+    "node_modules",
+    "bower_components",
+    "src",
+    "gulpfile.js",
+    "package.json"
+  ]
+}

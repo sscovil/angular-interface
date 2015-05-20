@@ -1,0 +1,10 @@
+.DS_Store
+.git
+.tmp
+.sass-cache
+.idea
+*.log
+*.iml
+node_modules
+bower_components
+test/bower_components
